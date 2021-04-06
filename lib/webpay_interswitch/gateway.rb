@@ -7,9 +7,9 @@ module WebpayInterswitch
 
     cattr_accessor :product_id, :pay_item_id, :currency, :site_redirect_url, :mac_key, :test
 
-    TEST_URL = 'https://sandbox.interswitchng.com/webpay/pay'
+    TEST_URL = 'https://sandbox.interswitchng.com/collections/w/pay'
 
-    LIVE_URL = 'https://webpay.interswitchng.com/paydirect/pay'
+    LIVE_URL = 'https://webpay.interswitchng.com/collections/w/pay'
 
     ## ACCEPTED_CURRENCIES:
     ## * Naira (In Kobo)

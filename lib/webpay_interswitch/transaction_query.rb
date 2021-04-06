@@ -22,9 +22,9 @@ module WebpayInterswitch
     # response is populated when a transactions search query is sent.
     attr_accessor :txnref, :resp, :desc, :payRef, :retRef, :cardNum, :amount, :response
 
-    TEST_URL = 'https://sandbox.interswitchng.com/webpay/api/v1/gettransaction.json'
+    TEST_URL = 'https://sandbox.interswitchng.com/collections/api/v1/gettransaction.json'
 
-    LIVE_URL = 'https://webpay.interswitchng.com/paydirect/api/v1/gettransaction.json'
+    LIVE_URL = 'https://webpay.interswitchng.com/collections/api/v1/gettransaction.json'
 
     def initialize(post_params={}, amount)
       post_params.to_hash.symbolize_keys!
